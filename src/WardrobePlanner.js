@@ -29,7 +29,7 @@ const WardrobePlanner = () => {
       styleTip:
         "Embrace vibrant greens and blues. Add floral accessories or statement jewelry to complement the boho vibe.",
       accessories: [],
-      outfits: [{ type: "couple", image: "/images/mahendi.jpeg" }],
+      outfits: [{ type: "couple", image: "/images/mahendi.png" }],
       themeColor: "#e8f5e9", // Light Green
       secondaryColor: "#228B22", // Forest Green for title
       vibeColor: "#006400", // Dark Green

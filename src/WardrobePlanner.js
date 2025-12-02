@@ -177,11 +177,13 @@ const WardrobePlanner = () => {
               style={{
                 color:
                   activeTab === event.id
-                    ? event.secondaryColor || (event.colorPalette && event.colorPalette[0].hex)
+                    ? event.secondaryColor ||
+                      (event.colorPalette && event.colorPalette[0].hex)
                     : "#666",
                 borderColor:
                   activeTab === event.id
-                    ? event.secondaryColor || (event.colorPalette && event.colorPalette[0].hex)
+                    ? event.secondaryColor ||
+                      (event.colorPalette && event.colorPalette[0].hex)
                     : "transparent",
               }}
             >
@@ -197,7 +199,9 @@ const WardrobePlanner = () => {
                 className="script-title"
                 style={{
                   color:
-                    activeEvent.secondaryColor || (activeEvent.colorPalette && activeEvent.colorPalette[0].hex),
+                    activeEvent.secondaryColor ||
+                    (activeEvent.colorPalette &&
+                      activeEvent.colorPalette[0].hex),
                 }}
               >
                 {activeEvent.title}
@@ -206,7 +210,9 @@ const WardrobePlanner = () => {
                 className="title-separator"
                 style={{
                   backgroundColor:
-                    activeEvent.secondaryColor || (activeEvent.colorPalette && activeEvent.colorPalette[0].hex),
+                    activeEvent.secondaryColor ||
+                    (activeEvent.colorPalette &&
+                      activeEvent.colorPalette[0].hex),
                 }}
               ></div>
               <h4 className="event-subtitle">{activeEvent.subtitle}</h4>
@@ -254,16 +260,17 @@ const WardrobePlanner = () => {
               <div className="visual-section">
                 <h4 className="color-palette-title">COLOR PALETTE</h4>
                 <div className="color-palette-group">
-                  {activeEvent.colorPalette && activeEvent.colorPalette.map((color, idx) => (
-                    <div key={idx} className="color-item">
-                      <div
-                        className="color-circle"
-                        style={{ backgroundColor: color.hex }}
-                        title={color.name}
-                      ></div>
-                      <span className="color-name">{color.name}</span>
-                    </div>
-                  ))}
+                  {activeEvent.colorPalette &&
+                    activeEvent.colorPalette.map((color, idx) => (
+                      <div key={idx} className="color-item">
+                        <div
+                          className="color-circle"
+                          style={{ backgroundColor: color.hex }}
+                          title={color.name}
+                        ></div>
+                        <span className="color-name">{color.name}</span>
+                      </div>
+                    ))}
                 </div>
 
                 <div className="outfit-preview">
@@ -292,8 +299,8 @@ const WardrobePlanner = () => {
 
             <div className="friendly-message">
               <p>
-                We are happy to see you in the above colors, but it is okay if you are not in these colors.
-                Your presence means everything to us! ❤️
+                Feel free to join the celebration in any dress code you like —
+                your smiling presence is the real highlight of the day! ❤️
               </p>
             </div>
           </div>

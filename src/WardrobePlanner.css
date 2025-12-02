@@ -314,10 +314,8 @@
 .friendly-message {
   margin-top: 30px;
   padding: 20px 30px;
-  background: rgba(255, 255, 255, 0.5);
   border-radius: 12px;
   text-align: center;
-  border-left: 4px solid #ff69b4;
 }
 
 .friendly-message p {

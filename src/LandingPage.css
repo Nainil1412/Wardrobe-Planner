@@ -92,7 +92,7 @@
   animation: sparkleFloat ease-in-out infinite, sparkleRotate linear infinite;
   pointer-events: none;
   opacity: 0;
-  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.8));
+  filter: drop-shadow(0 0 8px rgba(57, 2, 37, 0.8));
 }
 
 @keyframes sparkleFloat {

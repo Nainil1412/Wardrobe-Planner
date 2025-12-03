@@ -1,15 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./WardrobePlanner.css";
 
-const WardrobePlanner = () => {
-  const [activeTab, setActiveTab] = useState("mehendi");
+const WardrobePlanner = ({ activeTab, setActiveTab }) => {
 
   const events = [
     {
       id: "mehendi",
       title: "Mehfil-E-Mehendi",
       subtitle: "MEHNDI",
-      date: "January 23rd | Evening",
+      date: "January 23rd, 2026 | Evening",
       day: "THURSDAY",
       note: "Vibe: Boho & Colorful",
       paletteTheme: "Shades of Green",
@@ -39,7 +38,7 @@ const WardrobePlanner = () => {
       id: "sangeet",
       title: "Nach Baliye Night",
       subtitle: "SANGEET",
-      date: "January 24th | Evening",
+      date: "January 24th, 2026 | Evening",
       day: "SATURDAY",
       note: "Vibe: Glamorous & Glitzy",
       paletteTheme: "Sapphire Night",
@@ -68,7 +67,7 @@ const WardrobePlanner = () => {
       id: "haldi",
       title: "Rang de Mohe",
       subtitle: "HALDI",
-      date: "January 25th | Morning",
+      date: "January 25th, 2026 | Morning",
       day: "SUNDAY",
       note: "Vibe: Joyful & Bright",
       paletteTheme: "Pastel Paradise",
@@ -90,7 +89,7 @@ const WardrobePlanner = () => {
       styleTip:
         "Wear clothes you don't mind getting turmeric on! Light, comfortable fabrics in bright yellows and florals are perfect.",
       accessories: [],
-      outfits: [{ type: "couple", image: "/images/haldi.jpg" }],
+      outfits: [{ type: "couple", image: "/images/haldi.png" }],
       themeColor: "#fffacd", // Lemon Chiffon
       secondaryColor: "#FFD700", // Gold for title
       vibeColor: "#D2691E", // Chocolate (Dark Orange) for visibility
@@ -99,7 +98,7 @@ const WardrobePlanner = () => {
       id: "wedding",
       title: "Saat Phere",
       subtitle: "WEDDING",
-      date: "January 25th | Evening",
+      date: "January 25th, 2026 | Evening",
       day: "SUNDAY",
       note: "Vibe: Royal & Traditional",
       paletteTheme: "Royal Heritage Tone",
@@ -130,7 +129,7 @@ const WardrobePlanner = () => {
       id: "reception",
       title: "Evening of Elegance",
       subtitle: "RECEPTION",
-      date: "January 26th | Evening",
+      date: "January 26th, 2026 | Evening",
       day: "MONDAY",
       note: "Vibe: Elegant & Formal",
       paletteTheme: "Berry Blush",
@@ -162,11 +161,12 @@ const WardrobePlanner = () => {
 
   return (
     <div
+      id="wardrobe-planner"
       className="wardrobe-planner-container"
       style={{ backgroundColor: activeEvent.themeColor }}
     >
       <header className="main-header">
-        <h1 className="logo-text">Nainil & Nandini</h1>
+        {/* <h1 className="logo-text">Nainil & Nandini</h1> */}
         <h2 className="page-title">
           The Wardrobe <span className="script-text">Planner</span>
         </h2>
@@ -235,7 +235,7 @@ const WardrobePlanner = () => {
                   <h4
                     style={{
                       color:
-                        activeEvent.secondaryColor || activeEvent.colors[0].hex,
+                        activeEvent.secondaryColor || activeEvent.colorPalette[0].hex,
                     }}
                   >
                     ATTIRE
@@ -254,7 +254,7 @@ const WardrobePlanner = () => {
                   className="style-tip-box"
                   style={{
                     borderColor:
-                      activeEvent.secondaryColor || activeEvent.colors[0].hex,
+                      activeEvent.secondaryColor || activeEvent.colorPalette[0].hex,
                   }}
                 >
                   <h5>Style Tip</h5>
@@ -299,7 +299,7 @@ const WardrobePlanner = () => {
                         style={{
                           color:
                             activeEvent.secondaryColor ||
-                            activeEvent.colors[0].hex,
+                            activeEvent.colorPalette[0].hex,
                         }}
                       ></i>
                       <span>Couple Outfit Inspiration</span>

@@ -10,6 +10,10 @@
   --font-sans: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wardrobe-planner-container {
   min-height: 100vh;
   padding: 40px 20px;
@@ -294,7 +298,7 @@
 
 .outfit-preview {
   width: 100%;
-  height: 300px;
+  height: 400px;
   background: transparent;
   border-radius: 12px;
   display: flex;
@@ -371,6 +375,10 @@
   .palette-theme-title {
     font-size: 1.8rem;
   }
+
+  .outfit-preview {
+    height: 350px;
+  }
 }
 
 /* Tablets & Large Phones (max-width: 900px) */
@@ -416,6 +424,10 @@
 
   .palette-theme-title {
     font-size: 1.5rem;
+  }
+
+  .outfit-preview {
+    height: 320px;
   }
 }
 
@@ -507,7 +519,7 @@
   }
 
   .outfit-preview {
-    height: 250px;
+    height: 300px;
   }
 
   .outfit-placeholder i {
@@ -550,5 +562,9 @@
 
   .palette-theme-title {
     font-size: 1rem;
+  }
+
+  .outfit-preview {
+    height: 280px;
   }
 }

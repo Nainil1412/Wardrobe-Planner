@@ -12,6 +12,7 @@ const WardrobePlanner = () => {
       date: "January 23rd | Evening",
       day: "THURSDAY",
       note: "Vibe: Boho & Colorful",
+      paletteTheme: "Shades of Green",
       colorPalette: [
         { hex: "#228B22", name: "Forest Green" },
         { hex: "#2E8B57", name: "Sea Green" },
@@ -41,6 +42,7 @@ const WardrobePlanner = () => {
       date: "January 24th | Evening",
       day: "SATURDAY",
       note: "Vibe: Glamorous & Glitzy",
+      paletteTheme: "Sapphire Night",
       colorPalette: [
         { hex: "#FFD700", name: "Gold" },
         { hex: "#DAA520", name: "Goldenrod" },
@@ -69,6 +71,7 @@ const WardrobePlanner = () => {
       date: "January 25th | Morning",
       day: "SUNDAY",
       note: "Vibe: Joyful & Bright",
+      paletteTheme: "Pastel Paradise",
       colorPalette: [
         { hex: "#E6E6FA", name: "Lavender" },
         { hex: "#DDA0DD", name: "Plum" },
@@ -99,6 +102,7 @@ const WardrobePlanner = () => {
       date: "January 25th | Evening",
       day: "SUNDAY",
       note: "Vibe: Royal & Traditional",
+      paletteTheme: "Royal Heritage Tone",
       colorPalette: [
         { hex: "#8B0000", name: "Dark Red" },
         { hex: "#DC143C", name: "Crimson" },
@@ -129,6 +133,7 @@ const WardrobePlanner = () => {
       date: "January 26th | Evening",
       day: "MONDAY",
       note: "Vibe: Elegant & Formal",
+      paletteTheme: "Berry Blush",
       colorPalette: [
         { hex: "#000000", name: "Black" },
         { hex: "#2F4F4F", name: "Slate Gray" },
@@ -178,12 +183,12 @@ const WardrobePlanner = () => {
                 color:
                   activeTab === event.id
                     ? event.secondaryColor ||
-                      (event.colorPalette && event.colorPalette[0].hex)
+                    (event.colorPalette && event.colorPalette[0].hex)
                     : "#666",
                 borderColor:
                   activeTab === event.id
                     ? event.secondaryColor ||
-                      (event.colorPalette && event.colorPalette[0].hex)
+                    (event.colorPalette && event.colorPalette[0].hex)
                     : "transparent",
               }}
             >
@@ -259,6 +264,13 @@ const WardrobePlanner = () => {
 
               <div className="visual-section">
                 <h4 className="color-palette-title">COLOR PALETTE</h4>
+                {activeEvent.paletteTheme && (
+                  <h3 className="palette-theme-title" style={{
+                    color: activeEvent.secondaryColor || (activeEvent.colorPalette && activeEvent.colorPalette[0].hex)
+                  }}>
+                    Dress Code: {activeEvent.paletteTheme}
+                  </h3>
+                )}
                 <div className="color-palette-group">
                   {activeEvent.colorPalette &&
                     activeEvent.colorPalette.map((color, idx) => (

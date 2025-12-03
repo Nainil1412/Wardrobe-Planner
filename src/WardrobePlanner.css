@@ -222,7 +222,17 @@
   letter-spacing: 3px;
   color: #999;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.palette-theme-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  text-align: center;
+  margin: 0px 0 0px 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+  white-space: nowrap;
 }
 
 .color-palette-group {
@@ -235,7 +245,8 @@
   justify-content: center;
   animation: slideIn 0.5s ease;
   backdrop-filter: blur(10px);
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 @keyframes slideIn {
@@ -353,8 +364,12 @@
   }
 
   .color-palette-group {
-    gap: 18px;
-    padding: 18px;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .palette-theme-title {
+    font-size: 1.8rem;
   }
 }
 
@@ -395,8 +410,12 @@
   }
 
   .color-palette-group {
-    gap: 16px;
-    padding: 16px;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .palette-theme-title {
+    font-size: 1.5rem;
   }
 }
 
@@ -408,8 +427,8 @@
   }
 
   .color-palette-group {
-    gap: 14px;
-    padding: 14px;
+    gap: 10px;
+    padding: 10px;
   }
 }
 
@@ -470,19 +489,21 @@
   }
 
   .color-palette-group {
-    gap: 12px;
-    padding: 12px;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 8px;
+    padding: 10px;
   }
 
   .color-circle {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
   }
 
   .color-name {
-    font-size: 0.7rem;
+    font-size: 0.65rem;
+  }
+
+  .palette-theme-title {
+    font-size: 1.2rem;
   }
 
   .outfit-preview {
@@ -514,16 +535,20 @@
   }
 
   .color-circle {
-    width: 42px;
-    height: 42px;
+    width: 35px;
+    height: 35px;
   }
 
   .color-palette-group {
-    gap: 10px;
-    padding: 10px;
+    gap: 6px;
+    padding: 8px;
   }
 
   .color-name {
-    font-size: 0.65rem;
+    font-size: 0.6rem;
+  }
+
+  .palette-theme-title {
+    font-size: 1rem;
   }
 }

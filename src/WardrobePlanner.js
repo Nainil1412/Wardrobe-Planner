@@ -8,7 +8,7 @@ const WardrobePlanner = ({ activeTab, setActiveTab }) => {
       id: "mehendi",
       title: "Mehfil-E-Mehendi",
       subtitle: "MEHNDI",
-      date: "January 23rd, 2026 | Evening",
+      date: "January 22nd, 2026 | Evening",
       day: "THURSDAY",
       note: "Vibe: Boho & Colorful",
       paletteTheme: "Shades of Green",

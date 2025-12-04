@@ -115,7 +115,7 @@ const WardrobePlanner = ({ activeTab, setActiveTab }) => {
         title: "ATTIRE",
         description:
           "Men: Sherwani with Turban\nWomen: Red/Panetar Saree, Heavy Bridal Lehenga",
-        men: "Sherwani, Kurta Pajama, Jotpuri",
+        men: "Sherwani, Kurta Pajama, Jodhpuri",
         women: "Lehenga, Indo-Western, Saree",
       },
       styleTip:

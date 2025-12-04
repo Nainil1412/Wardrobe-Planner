@@ -84,7 +84,7 @@ const WardrobePlanner = ({ activeTab, setActiveTab }) => {
         title: "ATTIRE",
         description:
           "Men: Yellow Kurta Pajama, White Pathani Suit\nWomen: Yellow Saree, Floral Lehenga",
-        men: "Kurta Patiyal, Pathani Suit, Floral Kurtas",
+        men: "Kurta Patiyala, Pathani Suit, Floral Kurtas",
         women: "Indo-Western, Saree, Lehenga",
       },
       styleTip:

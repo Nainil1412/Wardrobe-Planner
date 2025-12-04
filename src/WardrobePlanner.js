@@ -48,6 +48,7 @@ const WardrobePlanner = ({ activeTab, setActiveTab }) => {
         { hex: "#000080", name: "Navy Blue" },
         { hex: "#191970", name: "Midnight Blue" },
         { hex: "#000000", name: "Black" },
+        { hex: "#ebb3c0ff", name: "Pastel Pink" },
       ],
       attire: {
         title: "ATTIRE",
@@ -83,7 +84,7 @@ const WardrobePlanner = ({ activeTab, setActiveTab }) => {
         title: "ATTIRE",
         description:
           "Men: Yellow Kurta Pajama, White Pathani Suit\nWomen: Yellow Saree, Floral Lehenga",
-        men: "Kurta Pajama, Pathani Suit, Floral Kurtas",
+        men: "Kurta Patiyal, Pathani Suit, Floral Kurtas",
         women: "Indo-Western, Saree, Lehenga",
       },
       styleTip:

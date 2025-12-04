@@ -71,7 +71,7 @@ const WardrobePlanner = ({ activeTab, setActiveTab }) => {
       date: "January 25th, 2026 | Morning",
       day: "SUNDAY",
       note: "Vibe: Joyful & Bright",
-      paletteTheme: "Pastel Paradise",
+      paletteTheme: "Rosy Sunshine Palette",
       colorPalette: [
         { hex: "#E6E6FA", name: "Lavender" },
         { hex: "#DDA0DD", name: "Plum" },
